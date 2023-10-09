@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>fade</title>
+
+    <!--Jquery-->
+    <script src="jquery-3.7.0.min.js"></script>
+    
+    
+    <!--Script-->
+    <script>
+
+     //Ao carregar documento
+     $(document).ready(function(){
+
+        //ocultar h1
+        $("h1").css("display","none");
+
+        //exibir h1
+        $("#exibir").click(function(){
+            $("h1").fadeIn(3000);
+
+            //ocultar o H1
+            $("#ocultar").click(function(){
+                $("h1").fadeOut(3000);
+            });
+
+        })
+
+            /*
+            tempo
+            1 - defaut - padrão 0,4s
+            2 - slow - 0,6s
+            3 - valor - 3000 = 3s
+
+            */
+
+     });
+
+    </script>
+    
+
+</head>
+
+<body>
+
+    <button id="exibir">Exibir</button>
+    <button id="ocultar">Ocultar</button>
+    <hr>
+    <h1>Aprendendo Jquary</h1>
+    
+</body>
+</html>

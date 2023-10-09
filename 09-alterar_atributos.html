@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Estrutura Base - JQuery</title>
+
+    <!--Jquery-->
+    <script src="jquery-3.7.0.min.js"></script>
+    
+    
+    <!--Script-->
+    <script>
+
+     //Ao carregar documento
+     $(document).ready(function(){
+
+        $("img").attr("width","700");
+        $("img").attr("title", "Alterando title")
+
+     });
+
+    </script>
+    
+
+</head>
+
+<body>
+    <img src="logo.jpg" width="200px" title="nerd shop">
+</body>
+</html>
